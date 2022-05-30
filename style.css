@@ -172,6 +172,7 @@ body {
 .hero__heading {
     margin-top: 4rem;
     font-size: clamp(1rem, 4vw, 3.4rem);
+    font-weight: lighter;
 }
 
 .hero__title {
