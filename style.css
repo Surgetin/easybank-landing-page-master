@@ -422,6 +422,11 @@ body {
     }
 
     /* Main */
+    .hero__image-phones img,
+    .hero__image-bg img {
+        right: unset;
+        margin: 0 auto;
+    }
 
     /* Service */
     .service_title {
