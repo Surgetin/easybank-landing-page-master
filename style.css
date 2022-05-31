@@ -162,17 +162,14 @@ body {
 }
 
 .hero__container {
-    display: grid;
-    grid-auto-columns: 50%;
+    display: flex;
+    flex-direction: row;
     background-color: var(--gray);
 }
 
-.hero__image-phones img {
-    position: absolute;
-    width: 100%;
-    top: -20px;
-    right: -90px;
-    max-width: 650px;
+.hero__heading_container,
+.hero__title {
+    width: 45%;
 }
 
 .hero__image-bg img {
@@ -181,6 +178,16 @@ body {
     max-width: 1100px;
     top: -150px;
     right: -390px;
+    z-index: 1;
+}
+
+.hero__image-phones img {
+    position: absolute;
+    width: 100%;
+    top: -20px;
+    right: -90px;
+    max-width: 650px;
+    z-index: 2;
 }
 
 .hero__section {
@@ -211,6 +218,7 @@ body {
     gap: 3rem;
     background-color: var(--light-blue);
 }
+
 
 .service_heading {
     margin-bottom: 1.5rem;
@@ -360,11 +368,15 @@ body {
     .service,
     .articles,
     .footer {
-        padding: 4rem 1.2rem;
+        padding: 0 1.2rem 4rem;
     }
 }
 
 @media screen and (max-width: 720px){
+    p {
+        font-size: 0.9rem;
+    }
+
     /* Header */
     .header, 
     .main {
@@ -421,21 +433,74 @@ body {
         z-index: 99999;
     }
 
+
     /* Main */
+
+    .hero__image-container {
+        height: 18rem;
+    }
+    
+    .hero__container {
+        flex-direction: column;
+    }
+    
     .hero__image-phones img,
     .hero__image-bg img {
+        position: relative;
         right: unset;
+        margin: 0 auto;
+        min-width: 240px;
+    }
+
+    .hero__image-phones {
+        position: relative;
+        top: -430px;
+    }
+
+    .hero__image-bg {
+        position: relative;
+        top: -130px;
+        left: -71px;
+        min-width: 560px;    
+    }
+
+    .hero__image-bg img {
+        top: 10px;
+    }
+
+    .hero__btn {
         margin: 0 auto;
     }
 
+    .hero__heading_container {
+        width: 100%;
+    }
+
+    .hero__heading {
+        font-size: 2rem;
+    }
+
+    .hero__heading,
+    .hero__title {
+        margin: 2rem auto;
+        width: 100%;
+    }
+
     /* Service */
+
+    .service_heading {
+        font-size: 1.8rem;
+    } 
+
     .service_title {
+        width: 100%;
         margin: 0 auto;
     }
 
     .content_section {
         flex-direction: column;
     }
+
 
     /* articles */
 
