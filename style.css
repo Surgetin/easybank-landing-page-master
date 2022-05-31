@@ -454,13 +454,13 @@ body {
 
     .hero__image-phones {
         position: relative;
-        top: -430px;
+        top: -45rem;
     }
 
     .hero__image-bg {
         position: relative;
-        top: -130px;
-        left: -71px;
+        top: -170px;
+        left: 145px;
         min-width: 560px;    
     }
 
@@ -531,5 +531,31 @@ body {
 
     .social_links {
         margin: 0.5rem auto 1rem;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .hero__image-phones {
+        position: relative;
+        top: -500px;
+    }
+}
+
+
+@media screen and (max-width: 410px){
+    .hero__image-phones {
+        position: relative;
+        top: -430px;
+    }
+
+    .hero__image-phones img {
+        min-width: 280px;
+    }
+
+    .hero__image-bg {
+        position: relative;
+        top: -130px;
+        left: -71px;
+        min-width: 560px;    
     }
 }
