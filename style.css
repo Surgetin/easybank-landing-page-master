@@ -441,7 +441,7 @@ body {
   }
 
   .nav__list-link::after {
-    bottom: 10px;
+    bottom: -10px;
   }
 
   /* Main */
